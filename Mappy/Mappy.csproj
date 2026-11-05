@@ -1,4 +1,4 @@
-﻿<Project Sdk="Dalamud.NET.Sdk/13.0.0">
+<Project Sdk="Dalamud.NET.Sdk/14.0.1">
     <PropertyGroup>
         <PackageProjectUrl>https://github.com/cycleapple/Mappy/tree/api13-tw</PackageProjectUrl>
         <Version>3.1.6.12</Version>
@@ -12,8 +12,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Reference Include="SharpDX" Private="false" />
-        <Reference Include="SharpDX.Direct3D11" Private="false" />
-        <Reference Include="SharpDX.DXGI" Private="false" />
+    </ItemGroup>
+    <!-- API14 no longer ships SharpDX; retain these private dependencies until the TerraFX conversion. -->
+    <ItemGroup>
+        <PackageReference Include="SharpDX" Version="4.2.0" />
+        <PackageReference Include="SharpDX.Direct3D11" Version="4.2.0" />
+        <PackageReference Include="SharpDX.DXGI" Version="4.2.0" />
     </ItemGroup>
 </Project>

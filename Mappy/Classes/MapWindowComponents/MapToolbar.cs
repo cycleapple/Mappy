@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Numerics;
 using Dalamud.Bindings.ImGui;
 using Dalamud.Interface;
@@ -123,7 +123,7 @@ public unsafe class MapToolbar
         if (currentMap.RowId is 0) return;
 
         // If this is a region map
-        if (currentMap.Hierarchy is 3) {
+        if (currentMap.MapType.RowId is 3) {
             foreach (var marker in AgentMap.Instance()->MapMarkers) {
                 if (!DrawHelpers.IsRegionIcon(marker.MapMarker.IconId)) continue;
 

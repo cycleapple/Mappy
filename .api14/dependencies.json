@@ -1,0 +1,8 @@
+[
+  {
+    "path": "KamiLib",
+    "baseCommit": "49b063b012c972b7ce8ec147f82fb4d9cf504a3e",
+    "patch": "patches/3f2af90b9e375b33.patch",
+    "sha256": "55f27f0c034296a9134fe5ee2b24132140a46fe09c77125232273ad2b1fee8b5"
+  }
+]
